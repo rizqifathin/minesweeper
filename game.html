@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>Minesweeper</title>
+
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+
+    <body>
+        <h1>Minesweeper</h1>
+        <hr>
+        <div id="navigation-timer-bar">
+            <div id="navigation-button">
+                <button id="tohome-button" onclick="toHome()">Home</button>
+                <button id="restart-button" onclick="selectRestart()">Restart</button>
+            </div>
+            <div id="timer">
+                Time: <span id="time_min">00</span>:<span id="time_sec">00</span>
+              </div>
+        </div>
+        <!-- 9x9 board -->
+        <div id="board"></div>
+        <br>
+        <div id="flags-box">
+            Flags: <span id="flags">10</span>
+        </div>
+
+    </body>
+    <script src="script.js"></script>
+</html>
